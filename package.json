@@ -1,0 +1,28 @@
+{
+  "name": "cypress-cucumber-TestProject",
+  "version": "2.2.0",
+  "description": "This project is working with Cucumber and Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:runner": "cypress open --e2e --browser chrome",
+    "cypress:execution": "cypress run --headed --browser chrome --spec cypress/e2e/features/sauceDemoLogin.feature",
+    "cypress:execution-tags": "cypress run -e --headed --browser chrome",
+    "test": "cypress run --headed --browser chrome --env tags=@e2e"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "allure-commandline": "^2.21.0",
+    "cypress": "^12.0.2",
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.16.4",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  }
+}
