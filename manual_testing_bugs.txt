@@ -1,0 +1,100 @@
+Bugs Summary and description
+============================
+
+Bug Summary -  Unable to checkout the cart and create the order.
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Click on Add to Cart button of "Sauce Labs back pack" 
+3. The item is added to cart successfully.
+4. Checkout the cart by entering firstname, lastname and Postal code.
+Also observed, when I type in last name, first name is over-written.
+5. User could not enter last name, checkout and create the order.
+
+Expected Result :
+
+User should be able to enter all data first name, last name and Zip code, checkout and create order successfully. 
+
+Actual Result :
+
+User could not enter last name, checkout and create the order.
+
+<Attach screen-shots>
+
+Bug Summary - In-correct Images displayed for Backpack, T-shirts and other products.
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Check the images of various products displayed in the page.
+
+Expected Result :
+
+It should display relevant images like standard_user.
+
+Actual Result :
+
+It displays in-correct product image.
+
+Bug Summary -  The Sort Options does not work in product page.
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Sort by any method (price low to high, high to low, alphabetical sort etc)
+3. The product page is not sorted based on the selected criteria.
+
+Expected Result :
+
+The product page should be sorted in Ascending or descending order based on selected criteria
+
+Actual Result :
+
+The product page is not sorted based on the selected criteria.
+
+<Attach screen-shots>
+
+Bug Summary - Unable to remove shopping cart items by clicking Remove button.
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Click on Add to Cart button of "Sauce Labs back pack" 
+3. The item is added to cart successfully.
+4. Click on Remove button to remove item from cart
+5. The Item is not removed from the cart
+
+Expected Result :
+
+On clicking Remove button, the item should be removed from the cart.
+
+Actual Result :
+
+On clicking Remove button, the item is not removed from the cart.
+
+
+Bug Summary - Help About page throws 404 error (Priority - Medium / Low)
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Click on Main menu and Help About.
+3. It throws 404 error.
+
+Expected Result :
+
+It should display Help about page like standard_user.
+
+Actual Result :
+
+It throws 404 error.
+
+Bug Summary - Product description Errors in page. (Medium)
+
+1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
+2. Check the Text description for some products.
+3. Some error texts like carry.allTheThings()/Test.allTheThings() are displayed
+
+Expected Result :
+
+The description texts need to be fixed.
+
+Actual Result :
+
+Function names like carry.allTheThings()/Test.allTheThings() are displayed.
+
+
+=========================================================
+
+ 
