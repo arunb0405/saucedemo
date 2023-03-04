@@ -1,100 +1,122 @@
-Bugs Summary and description
-============================
-
-Bug Summary -  Unable to checkout the cart and create the order.
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Click on Add to Cart button of "Sauce Labs back pack" 
-3. The item is added to cart successfully.
-4. Checkout the cart by entering firstname, lastname and Postal code.
-Also observed, when I type in last name, first name is over-written.
-5. User could not enter last name, checkout and create the order.
-
-Expected Result :
-
-User should be able to enter all data first name, last name and Zip code, checkout and create order successfully. 
-
-Actual Result :
-
-User could not enter last name, checkout and create the order.
-
-<Attach screen-shots>
-
-Bug Summary - In-correct Images displayed for Backpack, T-shirts and other products.
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Check the images of various products displayed in the page.
-
-Expected Result :
-
-It should display relevant images like standard_user.
-
-Actual Result :
-
-It displays in-correct product image.
-
-Bug Summary -  The Sort Options does not work in product page.
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Sort by any method (price low to high, high to low, alphabetical sort etc)
-3. The product page is not sorted based on the selected criteria.
-
-Expected Result :
-
-The product page should be sorted in Ascending or descending order based on selected criteria
-
-Actual Result :
-
-The product page is not sorted based on the selected criteria.
-
-<Attach screen-shots>
-
-Bug Summary - Unable to remove shopping cart items by clicking Remove button.
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Click on Add to Cart button of "Sauce Labs back pack" 
-3. The item is added to cart successfully.
-4. Click on Remove button to remove item from cart
-5. The Item is not removed from the cart
-
-Expected Result :
-
-On clicking Remove button, the item should be removed from the cart.
-
-Actual Result :
-
-On clicking Remove button, the item is not removed from the cart.
-
-
-Bug Summary - Help About page throws 404 error (Priority - Medium / Low)
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Click on Main menu and Help About.
-3. It throws 404 error.
-
-Expected Result :
-
-It should display Help about page like standard_user.
-
-Actual Result :
-
-It throws 404 error.
-
-Bug Summary - Product description Errors in page. (Medium)
-
-1. Navigate to https://www.saucedemo.com and login as problem_user/<password>
-2. Check the Text description for some products.
-3. Some error texts like carry.allTheThings()/Test.allTheThings() are displayed
-
-Expected Result :
-
-The description texts need to be fixed.
-
-Actual Result :
-
-Function names like carry.allTheThings()/Test.allTheThings() are displayed.
-
-
-=========================================================
-
- 
+1	Unable to checkout the cart and create the order for any product	Critical
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Click on Add to Cart button of "Sauce Labs back pack" 	
+	3. The item is added to cart successfully.	
+	4. Checkout the cart by entering firstname, lastname and Postal code.	
+	Also observed, when I type in last name, first name is over-written.	
+	5. User could not enter last name, checkout and create the order.	
+		
+	Expected Result :	
+	User should be able to enter all data first name, last name and Zip code, checkout and create order successfully. 	
+		
+	Actual Result :	
+	User could not enter last name, checkout and create the order.	
+	<Attach screen-shots>	
+		
+2	For some items, Add to Cart option doesn't add items to cart in Product display page.	High / Medium
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	"2. Try Add to cart of these items from product display page. Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket and Test.allTheThings() T-Shirt (Red)
+Note- these items can be added from Checkout page, a work around exists"	
+		
+	Expected Result :	
+		
+	The items should be added successfully to cart from product display page. 	
+		
+	Actual Result :	
+		
+	It doesn't add these items to cart from product page. A work around exists, able to add to cart by clicking on the item	
+		
+3	The cart button doesn't display the items in checkout page when 4 items are added. Unable to remove cart as well	Critical
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	"2. Click on Add to Cart button of 4 products in product display page.
+two from product page and 2 from check-out page"	
+	3. The items are added to cart successfully.	
+	4. Now click on the cart icon on top right corner, the cart displays a blank page	
+	5. Unable to clear the cart as well 	
+		
+	Expected - Cart items should display to user and user should be able to clear items as well	
+	Actual - The cart displays a blank page and unable to clear the cart	
+		
+4	For items that are able to be added from product page, try adding to cart of these items from detail page, Add to cart fails	High
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Click on Add to Cart button of 2 products from checkout page.(for those add to cart works from product page - Backpack and Bike light items)	
+	3. Add to cart button click doesn't add these items from checkout page	
+	Expected - Cart items should display to user and user should be able to clear items as well	
+	Actual -Add to cart button click doesn't add these items from checkout page	
+		
+5	In-correct product Images displayed for Backpack, T-shirts and all other products.	
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Check the images of various products displayed in the page.	
+		
+	Expected Result :	
+		
+	It should display relevant images like standard_user.	
+		
+	Actual Result :	
+		
+	It displays in-correct product image.	
+		
+6	The Sort Options does not work in product page.	Critical
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Sort by any method (price low to high, high to low, alphabetical sort etc)	
+	3. The product page is not sorted based on the selected criteria.	
+		
+	Expected Result :	
+		
+	The product page should be sorted in Ascending or descending order based on selected criteria	
+		
+	Actual Result :	
+		
+	The product page is not sorted based on the selected criteria.	
+		
+	<Attach screen-shots>	
+		
+7	Unable to remove shopping cart items by clicking Remove button in Product listing page.	
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Click on Add to Cart button of "Sauce Labs back pack" in product display page.	
+	3. The item is added to cart successfully.	
+	4. Click on Remove button to remove item from cart	
+	5. The Item is not removed from the cart	
+		
+	Expected Result :	
+		
+	On clicking Remove button, the item should be removed from the cart.	
+		
+	Actual Result :	
+		
+	On clicking Remove button, the item is not removed from the cart.	
+		
+		
+8	Help About page throws 404 error (Priority - Medium / Low)	Medium
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Click on Main menu and Help About.	
+	3. It throws 404 error.	
+		
+	Expected Result :	
+		
+	It should display Help about page like standard_user.	
+		
+	Actual Result :	
+		
+	It throws 404 error.	
+		
+9	Product description Errors in page.	Low
+		
+	1. Navigate to https://www.saucedemo.com and login as problem_user/<password>	
+	2. Check the Text description for some products.	
+	3. Some error texts like carry.allTheThings()/Test.allTheThings() are displayed	
+		
+	Expected Result :	
+		
+	The description texts need to be fixed.	
+		
+	Actual Result :	
+		
+	Function names like carry.allTheThings()/Test.allTheThings() are displayed.	
