@@ -25,3 +25,10 @@ Note - If we are using VS Code to run the test,  click extensions on the left, s
 
 Then go to VS Code terminal, run above commands in Terminal in same order. 
 
+6. The Video recordings are available in cypress/videos folder.
+The recording is automatically created for every run.
+
+7. The HTML report is available in cypress/reports/html folder (index.html)
+
+8. For screen-shots, cypress/screenshots folder.
+

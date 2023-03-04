@@ -38,6 +38,7 @@ class ProductPage {
     this.elements.checkOutPrice().invoke('text').then((checkoutPrice) =>{
        expect(checkoutPrice).to.eql(checkPrice);
     })
+    cy.screenshot();
   }
 
   continueOrder(fname, lname, pcode) {
