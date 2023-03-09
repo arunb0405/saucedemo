@@ -14,7 +14,9 @@ before(() => {
 })
 
 Given('the User is on Login page', () => {
-     cy.visit('/') //=> Visits the base URL
+    //  cy.visit('/') //=> Visits the base URL
+     const url = Cypress.env('HOST');
+     cy.visit(url);
      cy.log("Cart Products -"+this.data.products[0]);
 })
 
@@ -27,7 +29,8 @@ When("the user enters the password {string}", (password) => {
 })
 
 When("the user logs in entering {string} and password {string}", (username, password) => {
-    loginPage.submitLogin(username, password);
+    // loginPage.submitLogin(username, password);
+    cy.loginWith(username, password);
 })
 
 When("the user signs in", () => {

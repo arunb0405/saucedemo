@@ -28,6 +28,9 @@ module.exports = defineConfig({
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
     video: true,
-    defaultCommandTimeout: 10000
+    defaultCommandTimeout: 10000,
+    env: {
+      HOST: 'https://www.saucedemo.com'    
+    }
   },
 });

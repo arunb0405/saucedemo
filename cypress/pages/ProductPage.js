@@ -1,7 +1,8 @@
 class ProductPage { 
 
   elements = {
-    itemAddToCart: (itemName) => cy.xpath("//div[text()='"+itemName+"']/ancestor::div[@class='inventory_item_label']/following-sibling::div//button"),
+    // itemAddToCart: (itemName) => cy.xpath("//div[text()='"+itemName+"']/ancestor::div[@class='inventory_item_label']/following-sibling::div//button"),
+    itemAddToCart: (itemName) => cy.get('div').contains(itemName).parents('div.inventory_item_label').siblings('div.pricebar').find('button'),
     cartButton: () => cy.get('a.shopping_cart_link'),
     priceTag: (itemName) => cy.get('div').contains(itemName).parents('div.inventory_item_label').siblings('div.pricebar').find('div.inventory_item_price'),
     checkoutButton: () => cy.get('button[data-test="checkout"]'),

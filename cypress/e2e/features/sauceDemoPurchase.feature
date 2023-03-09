@@ -1,11 +1,13 @@
 Feature: E2E test adding Single item to Cart, Checkout and Order confirm 
 
-Login and add single Product, checkout and confirm order 
+Login and add single Product, checkout and confirm order
+
+Background:
+  Given the User is on Login page
 
 @e2e
 Scenario Outline: Purchasing of single product from start till checkout and order confirmed.
-Given the User is on Login page
-When the user logs in entering "<uname>" and password "<passwd>"
+Given the user logs in entering "<uname>" and password "<passwd>"
 Then the user verifies login page title
 When the user adds "<itemName>" to cart and verifies "<item_price>" in product page
 When the user checkouts the cart
@@ -18,7 +20,7 @@ Examples:
  | standard_user | secret_sauce     | Sauce Labs Backpack       | Allan     | Border   | 2000     | $29.99     | Thank you for your order!|
 #  | standard_user | secret_sauce     | Sauce Labs Fleece Jacket  | Rohit     | Sharma   | 3029     | $49.99     | Thank you for your order!|
 
-@Fail
+@e2e
 Scenario Outline: Test Failed login
 Given the User is on Login page
 When the user logs in entering "<uname>" and password "<passwd>"
